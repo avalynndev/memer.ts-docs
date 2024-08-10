@@ -18,6 +18,9 @@ Memer.ts
   </a>
 </p>
 
+![image](https://github.com/user-attachments/assets/0267d5a3-d6b1-4261-a2ca-cb76062ef3a7)
+
+
 ## What is Memer.ts?
 
 `Memer.ts` is a versatile npm package for easy image manipulation in TypeScript and JavaScript. 
