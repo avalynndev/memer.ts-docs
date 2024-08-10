@@ -54,7 +54,7 @@ export function Navbar() {
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                href="https://x.com/avalynndev"
                 className={buttonVariants({
                   variant: "ghost",
                   size: "icon",
