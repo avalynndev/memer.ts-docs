@@ -7,10 +7,10 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Docs stater template",
-  metadataBase: new URL("https://docstemplate.vercel.app/"),
+  title: "Memer.ts Docs",
+  metadataBase: new URL("https://memer-ts.vercel.app/"),
   description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    "Memer.ts is a powerful and flexible npm package designed for easy image manipulation in TypeScript and JavaScript.",
 };
 
 export default function RootLayout({

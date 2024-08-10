@@ -11,14 +11,14 @@ export function Footer() {
             Build by{" "}
             <Link
               className="px-1 underline underline-offset-2"
-              href="https://github.com/Fake098"
+              href="https://github.com/avalynndev"
             >
-              Fake098
+              avalynndev
             </Link>
             . The source code is available on{" "}
             <Link
               className="px-1 underline underline-offset-2"
-              href="https://github.com/Fake098/Docs-Stater-Template"
+              href="https://github.com/avalynndev/memer.ts-docs"
             >
               GitHub
             </Link>

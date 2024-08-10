@@ -23,11 +23,7 @@ export const NAVLINKS = [
   },
   {
     title: "Community",
-    href: "#",
-  },
-  {
-    title: "Blog",
-    href: "#",
+    href: "https://discord.gg/QhthacNnN6",
   },
 ];
 
@@ -52,7 +48,7 @@ export function Navbar() {
             <Search />
             <div className="flex">
               <Link
-                href="https://github.com/Fake098/Docs-Stater-Template"
+                href="https://github.com/avalynndev/memer.ts"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />

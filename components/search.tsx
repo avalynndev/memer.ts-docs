@@ -1,7 +1,6 @@
 "use client";
 
-import { CommandIcon, FileTextIcon, SearchIcon } from "lucide-react";
-import { Input } from "@/components/ui/input";
+import { FileTextIcon, ChevronUp } from "lucide-react";
 import {
   Dialog,
   DialogContent,
@@ -13,6 +12,7 @@ import { page_routes } from "@/lib/routes-config";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useEffect, useMemo, useState } from "react";
 import Anchor from "./anchor";
+import { Button } from "./ui/button";
 
 export default function Search() {
   const [searchedInput, setSearchedInput] = useState("");
@@ -50,18 +50,21 @@ export default function Search() {
         }}
       >
         <DialogTrigger asChild>
-          <div className="relative flex-1 max-w-md cursor-pointer">
-            <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-neutral-500 dark:text-neutral-400" />
-            <Input
-              className="w-full rounded-md bg-muted border h-9 pl-10 pr-4 text-sm shadow-sm "
-              placeholder="Search documentation..."
-              type="search"
-            />
-            <div className="sm:flex hidden absolute top-1/2 -translate-y-1/2 right-2 text-xs font-medium font-mono items-center gap-0.5 dark:bg-neutral-700 bg-zinc-200 p-1 rounded-sm">
-              <CommandIcon className="w-3 h-3" />
+          <Button
+            variant="outline"
+            className={
+              "relative h-8 w-full justify-start rounded-[0.5rem] bg-background text-sm font-normal text-muted-foreground shadow-none sm:pr-12 md:w-40 lg:w-64"
+            }
+          >
+            <span className="hidden lg:inline-flex">
+              Search documentation...
+            </span>
+            <span className="inline-flex lg:hidden">Search</span>
+            <div className="pointer-events-none absolute right-[0.3rem] hidden h-6 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex">
+              <ChevronUp className="w-3 h-3" />
               <span>k</span>
             </div>
-          </div>
+          </Button>
         </DialogTrigger>
         <DialogContent className="p-0 max-w-[650px] sm:top-[38%] top-[45%]">
           <DialogHeader>

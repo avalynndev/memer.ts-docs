@@ -1,6 +1,79 @@
 ---
 title: Introduction
-description: An overview of Memer.ts and how to get started.
+description: This section provides an overview of memer.ts and how you can use it.
 ---
 
-`Memer.ts` is a powerful and flexible npm package designed for easy image manipulation in TypeScript and JavaScript. Whether you're adding text to images, applying filters, or resizing, `Memer.ts` provides a simple and efficient API that works seamlessly with various image formats. This documentation will guide you through the installation, usage, and customization of `Memer.ts`.
+`Memer.ts` is a versatile npm package for easy image manipulation in TypeScript and JavaScript. 
+
+It allows you to add text, apply filters, resize images, and more, all with a simple and efficient API that supports various image formats. 
+
+This guide covers installation, usage, and customization of `Memer.ts`.
+
+## Overview
+
+Welcome to the `Quick Start Guide` section. Here, you'll find all the information you need to get started with our application.
+
+## Content
+
+- **Introduction**: Get to know the basics.
+- **Installation**: Step-by-step guide to set up the application.
+- **Examples**: Check out some practical examples.
+- **FAQ**: Frequently Asked Questions.
+
+## Getting Started
+
+### Step 1: Introduction
+
+The `Quick Start Guide` section introduces you to the core concepts and functionalities of `memer.ts`. It is designed to help you understand the essentials and get started quickly.
+
+### Step 2: Installation
+
+To begin using `memer.ts`, follow these simple steps: 
+> Install `memer.ts` from npm using npm or yarn.
+
+```bash
+npm install memer.ts
+```
+
+```bash
+yarn add memer.ts
+```
+
+### Step 3: Examples
+
+Once installed, you can import `Memer.ts` into your TypeScript or JavaScript files and start manipulating images.
+Here’s how to import `Memer.ts`:
+
+```typescript showLineNumbers {10}
+// Basic usage example
+import fs from "fs/promises";
+import { Memer } from "memer.ts";
+
+const memer = new Memer()
+
+async function createImageFile() {
+	try {
+    // using stonks function
+		const buffer = await memer.stonks("Memer.ts UP.");
+
+		// Write the buffer to a file called image.png
+		await fs.writeFile("image.png", buffer);
+		console.log("Image file created successfully.");
+	} catch (error) {
+		console.error("Error creating image file:", error);
+	}
+}
+
+createImageFile();
+```
+
+Now you’re ready to start using the powerful features of `Memer.ts` in your project!
+
+
+### Step 4: FAQ
+
+Find answers to common questions in our [FAQ section](/docs/getting-started/faq).
+
+## Conclusion
+
+The `Quick Start Guide` section is your starting point for exploring the application. Follow the steps above to get started quickly and easily.

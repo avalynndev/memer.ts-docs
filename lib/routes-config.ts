@@ -5,22 +5,8 @@ export const ROUTES = [
     href: "getting-started",
     items: [
       { title: "Introduction", href: "/introduction" },
-      { title: "Installation", href: "/installation" },
-      { title: "Quick Start Guide", href: "/quick-start-guide" },
-      { title: "Project Structure", href: "/project-structure" },
-      { title: "Changelog", href: "/changelog" },
-      { title: "FAQ", href: "/faq" },
     ],
   },
-  // {
-  //   title: "Server Actions",
-  //   href: "server-actions",
-  //   items: [
-  //     { title: "getSession", href: "/getSession" },
-  //     { title: "getToken", href: "/getToken" },
-  //     { title: "getRole", href: "/getRole" },
-  //   ],
-  // },
   {
     title: "Methods",
     href: "methods",
