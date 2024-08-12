@@ -44,12 +44,14 @@ yarn add memer.ts
 Once installed, you can import `Memer.ts` into your TypeScript or JavaScript files and start manipulating images.
 Here’s how to import `Memer.ts`:
 
+
+
 ```typescript showLineNumbers {10}
 // Basic usage example
 import fs from "fs/promises";
 import { Memer } from "memer.ts";
 
-const memer = new Memer()
+const memer = new Memer("napi")
 
 async function createImageFile() {
 	try {
@@ -65,6 +67,15 @@ async function createImageFile() {
 }
 
 createImageFile();
+```
+
+While creating a class in Memer.ts You can either chose `@napi-rs/canvas` or `canvas` packages. It is recommended to use `@napi-rs/canvas` rather than `canvas`.
+```typescript showLineNumbers {1}
+const memer = new Memer("canvas")
+```
+
+```typescript showLineNumbers {1}
+const memer = new Memer("napi")
 ```
 
 Now you’re ready to start using the powerful features of `Memer.ts` in your project!
