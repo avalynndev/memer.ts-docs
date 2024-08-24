@@ -51,7 +51,7 @@ Here’s how to import `Memer.ts`:
 import fs from "fs/promises";
 import { Memer } from "memer.ts";
 
-const memer = new Memer("napi")
+const memer = new Memer("")
 
 async function createImageFile() {
 	try {
@@ -69,15 +69,19 @@ async function createImageFile() {
 createImageFile();
 ```
 
-While creating a class in Memer.ts You can either chose `@napi-rs/canvas` or `canvas` packages. It is recommended to use `@napi-rs/canvas` rather than `canvas`.
-```typescript showLineNumbers {1}
-const memer = new Memer("canvas")
+While using Memer.ts You can either chose `@napi-rs/canvas` or `canvas` packages. 
+```typescript showLineNumbers {2}
+import { Memer } from "memer.ts" 
+const memer = new Memer("")
+// usage for napi-rs/canvas
 ```
 
-```typescript showLineNumbers {1}
-const memer = new Memer("napi")
+```typescript showLineNumbers {2}
+import { Memer } from "memer.ts-canvas" 
+const memer = new Memer("")
+// usage for canvas
 ```
-
+However, It is recommended to use `@napi-rs/canvas` rather than `canvas`.
 Now you’re ready to start using the powerful features of `Memer.ts` in your project!
 
 
