@@ -17,14 +17,6 @@ export const NAVLINKS = [
     title: "Examples",
     href: "#",
   },
-  {
-    title: "Guides",
-    href: "#",
-  },
-  {
-    title: "Community",
-    href: "https://discord.gg/QhthacNnN6",
-  },
 ];
 
 export function Navbar() {
